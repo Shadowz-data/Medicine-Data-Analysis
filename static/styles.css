@@ -1,0 +1,157 @@
+@font-face{
+    font-family:"light";
+    src: url(L.ttf);
+}
+
+@font-face{
+    font-family:"futura";
+    src: url(Futura.ttf);
+}
+
+body 
+{
+  background-color: #253237;
+  color: #EDF2F4;
+}
+
+h1
+{
+	font-size: 70px;
+	font-family: 'light';
+	text-align:center;
+	color: #73f80e;
+	left: 44.6%;
+	top: 100%;
+	line-height: 25%;
+  letter-spacing: 5px;
+}
+
+h2:hover
+{
+  animation-name: example;
+  animation-duration: 4s;
+  font-size: 30px;
+  text-align:center;
+  font-family: 'futura';
+  left: 44.6%;
+}
+
+h2
+{
+	font-size: 30px;
+	text-align:center;
+	font-family: 'futura';
+	left: 44.6%;
+  color: #FFFFFF;
+}
+
+@keyframes example {
+  from {color: #fff;}
+  to {color: #26D0CE;}
+}
+
+h3
+{
+	text-align:center;
+	font-family: 'futura';
+	font-size: 20px;
+	left: 44.6%;
+
+}
+
+#features
+{
+  text-align:center;
+  font-family: 'futura';
+  font-size: 20px;
+  left: 44.6%;
+  word-spacing: 15px;
+  margin-top: 2%;
+}
+
+p
+{
+	text-align:center;
+	font-family: 'futura';
+	font-size: 60px;
+	left: 44.6%;
+}
+ 
+
+input[type=submit] {
+    background: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #73f80e;
+    margin-left: 46.8%;
+    font-size: 35px;
+    font-family:"futura";
+    margin-top: 1%;
+} 
+
+select {
+    background: transparent;
+    color: #40EBFF;
+    margin-left: 34.5%;
+    font-size: 20px;
+    font-family:"futura";
+    margin-top: 1%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+option {
+  background-color: #253237;
+  font-size: 20px;
+  color: #FFF;
+  text-align: center;
+}
+
+#line
+{
+	width: 80%;
+	height: 5px;
+	background-color: #c0fdff;
+	align-self: center;
+	position: absolute;
+  left: 10%;
+}
+
+
+
+::placeholder 
+{
+  color: #000;
+  font-family: 'futura';
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  color: #40EBFF;
+}
+
+
+#result_table {
+  font-family: 'futura';
+  text-align: center;
+  margin-left: 24%;
+  position: relative;
+}
+
+th {
+  text-align:center;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  color: white;
+  border-color: white;
+  padding: 15px;
+}

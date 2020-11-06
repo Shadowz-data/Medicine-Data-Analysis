@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predictable</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename ='styles.css')}}">
+</head>
+<body>
+
+	<br>
+	<h1>SHADOWS</h1>
+	<h2>Medication Assistance Site</h2>
+	
+	<div id="line"></div>
+	<br>
+	
+	<div class="ml-container">
+
+		<form action="{{ url_for('assist')}}" method="POST">
+
+			<h3>Select a Condition, any Condition</h3>
+
+			<select name="condition" id="condition" style="text-align:center;">
+  				
+				{% for i in all_condition %}
+
+                <option value="{{i}}">{{i}}</option>
+
+            	{% endfor %}
+
+			</select>
+
+			<br>
+
+			<input type="submit" value="Assist">
+
+			<br>
+			<br>
+
+			<div id="line"></div>
+		
+		</form>
+	
+	</div>
+
+<br>
+<br>
+
+    <div id="result_table">
+    {% for table in tables %}
+            {{ table|safe }}
+    {% endfor %}
+    </div>
