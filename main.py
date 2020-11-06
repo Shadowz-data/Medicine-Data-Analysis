@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 
 app = flask.Flask(__name__, template_folder='templates')
 
-data = pd.read_csv("Final_Drug.csv")
+data = pd.read_csv("Final Medicine Result.csv")
 
 all_condition = sorted(set(data["condition"]))
 
